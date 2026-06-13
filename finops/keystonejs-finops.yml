@@ -1,0 +1,62 @@
+name: KeystoneJS FinOps
+description: >-
+  KeystoneJS is MIT-licensed open-source software with no licensing or
+  subscription costs. FinOps considerations relate entirely to the
+  infrastructure on which Keystone is deployed (compute, database, storage,
+  CDN) and any optional commercial support engagement with Thinkmill. Cost
+  optimization focuses on right-sizing the hosting environment and using managed
+  database services efficiently.
+url: https://keystonejs.com
+created: "2026-06-13"
+modified: "2026-06-13"
+softwareCosts:
+  licensingCost: Free (MIT open-source license)
+  subscriptionCost: None
+  enterpriseSupport: Contact Thinkmill for commercial pricing (https://www.thinkmill.com.au/services/keystone)
+
+infrastructureCosts:
+  description: >-
+    All costs are incurred at the infrastructure level chosen by the operator.
+    KeystoneJS runs on Node.js and requires a database (PostgreSQL recommended
+    for production). Typical deployment stacks include a Node.js application
+    server, a managed PostgreSQL database, and optional object storage for
+    images and files.
+  components:
+    - name: Node.js Application Server
+      description: >-
+        Keystone runs as a Node.js process. Minimum recommended: 1 vCPU,
+        512 MB RAM for small projects. Production workloads typically need
+        1-2+ vCPUs and 1-2 GB RAM. Can be deployed to any Node.js-compatible
+        host including Railway, Render, Fly.io, AWS EC2/ECS, Google Cloud Run,
+        or Heroku.
+      estimatedMonthlyCost: "$5–$100+ depending on host and instance size"
+
+    - name: Database (PostgreSQL / MySQL / SQLite)
+      description: >-
+        PostgreSQL is the recommended production database. SQLite is suitable
+        for development and embedded use cases. Managed PostgreSQL services
+        include Supabase, Neon, Railway Postgres, AWS RDS, and Google Cloud SQL.
+      estimatedMonthlyCost: "$0 (Supabase/Neon free tiers) – $50+ for managed production instances"
+
+    - name: File and Image Storage
+      description: >-
+        The image and file field types can store assets locally or via
+        cloud storage such as AWS S3 or Cloudflare R2 using community
+        adapters. Storage costs depend on asset volume.
+      estimatedMonthlyCost: "$0–$20+ depending on storage volume and CDN usage"
+
+costOptimizationTips:
+  - Use Neon or Supabase free-tier PostgreSQL for development and small projects to eliminate database costs.
+  - Deploy the Node.js server to a platform with a free tier (Railway, Render, Fly.io) for low-traffic applications.
+  - Enable Prisma query optimization and use the take limit (graphql.queryLimits.maxTotalResults) to prevent expensive runaway queries that inflate compute costs.
+  - Use SQLite for local development and embedded read-heavy sites to remove the need for a separate database server.
+  - Cache GraphQL responses at the CDN or reverse-proxy layer to reduce compute load per request.
+  - Monitor slow queries via database-level tooling (pg_stat_statements on PostgreSQL) rather than relying on application-level instrumentation.
+
+references:
+  - url: https://keystonejs.com/docs
+    description: Official Keystone documentation including deployment guidance
+  - url: https://www.thinkmill.com.au/services/keystone
+    description: Thinkmill enterprise support and consulting services
+  - url: https://keystonejs.com/blog
+    description: Keystone blog with deployment examples and best practices

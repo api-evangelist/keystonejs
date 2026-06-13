@@ -1,0 +1,68 @@
+aid: keystonejs
+name: KeystoneJS
+description: >-
+  KeystoneJS is an open-source headless CMS and GraphQL API platform for
+  Node.js. It auto-generates a powerful GraphQL API and a beautiful management
+  UI from schema definitions, enabling developers to manage content and user
+  data without boilerplate. Built on TypeScript with Prisma for database
+  migrations, it supports PostgreSQL, MySQL, and SQLite and includes access
+  control, session management, hooks, and rich document editing out of the box.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/keystonejs/refs/heads/main/apis.yml
+created: "2026-06-13"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+tags:
+  - Headless CMS
+  - GraphQL
+  - Node.js
+  - Content Management
+  - Open Source
+  - TypeScript
+  - Prisma
+apis:
+  - aid: keystonejs:keystonejs-graphql-api
+    name: KeystoneJS GraphQL API
+    description: >-
+      Auto-generated GraphQL API served at /api/graphql that provides full CRUD
+      operations for every list in the schema. Includes single-item queries,
+      list queries with filtering and pagination, count queries, and create,
+      update, and delete mutations in both single and batch variants. Schema is
+      extended with custom queries and mutations via the extendGraphqlSchema
+      configuration option.
+    humanURL: https://keystonejs.com/docs/graphql/overview
+    baseURL: https://your-keystone-app.example.com/api/graphql
+    tags:
+      - GraphQL
+      - CMS
+      - CRUD
+      - Content API
+    properties:
+      - type: Documentation
+        url: https://keystonejs.com/docs/graphql/overview
+      - type: OpenAPI
+        url: https://keystonejs.com/docs/graphql/overview
+common:
+  - type: Website
+    url: https://keystonejs.com
+  - type: Documentation
+    url: https://keystonejs.com/docs
+  - type: GitHubOrg
+    url: https://github.com/keystonejs
+  - type: Blog
+    url: https://keystonejs.com/blog
+  - type: Pricing
+    url: https://www.thinkmill.com.au/services/keystone
+  - type: X
+    url: https://x.com/keystonejs
+  - type: Plans
+    url: plans/keystonejs-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/keystonejs-rate-limits.yml
+  - type: FinOps
+    url: finops/keystonejs-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

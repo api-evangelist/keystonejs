@@ -1,0 +1,72 @@
+name: KeystoneJS Plans and Pricing
+description: >-
+  KeystoneJS is free and open-source software released under the MIT license.
+  There are no subscription tiers for the core framework itself. Enterprise
+  commercial support, consulting, and augmentation services are available
+  through Thinkmill, the company that created and maintains KeystoneJS.
+url: https://www.thinkmill.com.au/services/keystone
+created: "2026-06-13"
+modified: "2026-06-13"
+plans:
+  - name: Open Source (Free)
+    description: >-
+      Full KeystoneJS framework at no cost under the MIT open-source license.
+      Includes the GraphQL API engine, Admin UI, access control, hooks,
+      TypeScript support, Prisma database migrations, and all field types.
+      Community support via GitHub issues and Slack.
+    url: https://keystonejs.com/docs
+    price: Free
+    license: MIT
+    features:
+      - Auto-generated GraphQL CRUD API
+      - Admin UI for content management
+      - TypeScript and JavaScript support
+      - PostgreSQL, MySQL, and SQLite support via Prisma
+      - Access control configuration
+      - Session and authentication support
+      - Hooks for custom business logic
+      - Rich document editor (structured JSON storage)
+      - Image and file field types
+      - Virtual fields and schema extension
+      - Community Slack support
+      - GitHub issue tracker
+
+  - name: Enterprise Capacity
+    description: >-
+      Team augmentation with expert Keystone engineers from Thinkmill. Embeds
+      experienced developers directly into your team to improve deliverables and
+      keep projects on schedule.
+    url: https://www.thinkmill.com.au/services/keystone
+    price: Contact for pricing
+    features:
+      - Expert Keystone engineer augmentation
+      - Milestone and deliverable support
+      - Direct Thinkmill team integration
+
+  - name: Enterprise Capability
+    description: >-
+      Targeted technical assistance covering Keystone configuration, solution
+      architecture, access control design, GraphQL federation, data pipelines,
+      and third-party integrations.
+    url: https://www.thinkmill.com.au/services/keystone
+    price: Contact for pricing
+    features:
+      - Solution architecture design
+      - Access control implementation
+      - GraphQL federation setup
+      - Data pipeline construction
+      - Third-party integration assistance
+
+  - name: Enterprise Advisory
+    description: >-
+      Strategic consultation from Keystone's original creators at Thinkmill.
+      Covers architecture review, best practices, code audits, and multi-channel
+      content strategy to ensure long-term platform health.
+    url: https://www.thinkmill.com.au/services/keystone
+    price: Contact for pricing
+    features:
+      - Architecture review sessions
+      - Best practices guidance
+      - Code audits
+      - Multi-channel content strategy
+      - Direct access to Keystone core creators

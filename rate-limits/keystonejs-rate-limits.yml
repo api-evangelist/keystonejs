@@ -1,0 +1,53 @@
+name: KeystoneJS Rate Limits
+description: >-
+  KeystoneJS is a self-hosted open-source framework; it does not impose
+  platform-level rate limits. Operators are responsible for configuring their
+  own rate limiting at the infrastructure layer (reverse proxy, API gateway,
+  etc.). Keystone does expose a query-complexity limit mechanism via the
+  graphql.queryLimits configuration option to prevent excessively large or
+  deep queries from exhausting server resources.
+url: https://keystonejs.com/docs/graphql/overview
+created: "2026-06-13"
+modified: "2026-06-13"
+rateLimits:
+  - name: No Platform Rate Limits
+    description: >-
+      As a self-hosted framework, KeystoneJS enforces no built-in per-request or
+      per-minute rate limits. API consumers are subject only to limits the
+      operator chooses to configure on their hosting infrastructure (e.g., nginx
+      rate limiting, Cloudflare rules, or an API gateway policy).
+    scope: Platform
+    limit: None enforced by the framework
+
+  - name: GraphQL Query take Limit
+    description: >-
+      The graphql.queryLimits.maxTotalResults configuration option caps the
+      maximum number of results that can be returned in a single GraphQL list
+      query. Exceeding this limit returns a KS_LIMITS_EXCEEDED error code. The
+      default value is not set unless explicitly configured by the operator.
+    scope: Per GraphQL query
+    errorCode: KS_LIMITS_EXCEEDED
+    configOption: graphql.queryLimits.maxTotalResults
+    default: Not set (operator-defined)
+    documentationUrl: https://keystonejs.com/docs/graphql/overview
+
+  - name: GraphQL Introspection (Production)
+    description: >-
+      GraphQL introspection and the GraphQL Playground IDE are automatically
+      disabled when NODE_ENV is set to production. This is a security measure,
+      not a rate limit, but it restricts access to schema exploration in
+      production environments.
+    scope: Environment
+    condition: NODE_ENV=production
+    behavior: Introspection and Playground disabled
+
+operatorGuidance:
+  description: >-
+    Operators deploying KeystoneJS are advised to implement rate limiting at the
+    infrastructure layer. Common approaches include nginx limit_req_zone
+    directives, Cloudflare Rate Limiting rules, AWS API Gateway usage plans, or
+    application-level middleware such as express-rate-limit for the underlying
+    Express or Fastify server.
+  references:
+    - https://keystonejs.com/docs/config/config
+    - https://keystonejs.com/docs/graphql/overview
