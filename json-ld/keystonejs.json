@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://keystonejs.com",
+  "name": "KeystoneJS",
+  "description": "KeystoneJS is an open-source headless CMS and GraphQL API platform for Node.js. It auto-generates a powerful GraphQL API and a beautiful management UI from schema definitions, enabling developers to manage content and user data without boilerplate.",
+  "url": "https://keystonejs.com",
+  "applicationCategory": "Content Management System",
+  "applicationSubCategory": "Headless CMS",
+  "programmingLanguage": [
+    "TypeScript",
+    "JavaScript"
+  ],
+  "runtimePlatform": "Node.js",
+  "operatingSystem": "Cross-platform",
+  "softwareVersion": "6",
+  "license": "https://opensource.org/licenses/MIT",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Open source, free to use"
+  },
+  "featureList": [
+    "Auto-generated GraphQL API",
+    "Admin UI",
+    "Access control",
+    "Session management",
+    "Hooks",
+    "Rich document editing",
+    "PostgreSQL support",
+    "MySQL support",
+    "SQLite support",
+    "Prisma migrations",
+    "TypeScript support",
+    "Singleton items",
+    "Custom GraphQL extensions"
+  ],
+  "sameAs": [
+    "https://github.com/keystonejs",
+    "https://x.com/keystonejs"
+  ],
+  "mainEntityOfPage": "https://keystonejs.com/docs",
+  "author": {
+    "@type": "Organization",
+    "name": "Thinkmill",
+    "url": "https://www.thinkmill.com.au"
+  },
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": "https://keystonejs.com/docs"
+  }
+}
