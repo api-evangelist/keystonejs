@@ -29,6 +29,14 @@ tags:
 - GraphQL
 - Node.js
 - Content Management
+- Open-Source
+- TypeScript
+- Prisma
+tags_raw:
+- Headless CMS
+- GraphQL
+- Node.js
+- Content Management
 - Open Source
 - TypeScript
 - Prisma
@@ -43,6 +51,11 @@ apis:
   humanURL: https://keystonejs.com/docs/graphql/overview
   baseURL: https://your-keystone-app.example.com/api/graphql
   tags:
+  - GraphQL
+  - CMS
+  - CRUD
+  - content-api
+  tags_raw:
   - GraphQL
   - CMS
   - CRUD
