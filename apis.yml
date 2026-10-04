@@ -40,7 +40,7 @@ tags:
 - GraphQL
 - Node.js
 - Content Management
-- Open-Source
+- Open Source
 - TypeScript
 - Prisma
 tags_raw:
@@ -51,6 +51,7 @@ tags_raw:
 - Open Source
 - TypeScript
 - Prisma
+- Open-Source
 apis:
 - aid: keystonejs:keystonejs-graphql-api
   name: KeystoneJS GraphQL API
