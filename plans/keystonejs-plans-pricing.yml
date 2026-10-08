@@ -75,3 +75,35 @@ plans:
       - Code audits
       - Multi-channel content strategy
       - Direct access to Keystone core creators
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  units: []
+  plans:
+  - name: Open Source (Free)
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise Capacity
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise Capability
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise Advisory
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
