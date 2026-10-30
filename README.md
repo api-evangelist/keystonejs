@@ -66,18 +66,108 @@
 
 KeystoneJS is an open-source headless CMS and GraphQL API platform for Node.js. It auto-generates a powerful GraphQL API and a beautiful management UI from schema definitions, enabling developers to manage content and user data without boilerplate. Built on TypeScript with Prisma for database migrations, it supports PostgreSQL, MySQL, and SQLite and includes access control, session management, hooks, and rich document editing out of the box.
 
-**Website:** https://keystonejs.com  
-**Documentation:** https://keystonejs.com/docs  
-**GitHub:** https://github.com/keystonejs/keystone  
-**Blog:** https://keystonejs.com/blog  
-**X:** https://x.com/keystonejs  
-**Enterprise Support:** https://www.thinkmill.com.au/services/keystone
+**Areas:** Headless CMS · GraphQL · Node.js · Content Management · Open Source · TypeScript · Prisma
 
-## APIs.json
+## KeystoneJS on APIs.io
 
-This repository contains the APIs.json 0.19 profile for KeystoneJS, cataloging its GraphQL API and associated metadata.
+Everything profiled for KeystoneJS is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/keystonejs/](https://apis.io/providers/keystonejs/)** — or go straight to one of the APIs or properties below.
 
-- `apis.yml` — Main APIs.json index
-- `plans/keystonejs-plans-pricing.yml` — Pricing and support tiers
-- `rate-limits/keystonejs-rate-limits.yml` — Rate limiting details
-- `finops/keystonejs-finops.yml` — FinOps and cost considerations
+### APIs (1)
+
+- [KeystoneJS GraphQL API](https://apis.io/apis/keystonejs/keystonejs-graphql-api/) — Auto-generated GraphQL API served at /api/graphql that provides full CRUD operations for every list in the schema. Includes single-item queries, list…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### GraphQL (1)
+
+GraphQL schemas.
+
+- [KeystoneJS GraphQL API](https://apis.io/graphqls/keystonejs/keystonejs-graphql/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Keystonejs Domain Security](https://apis.io/security/keystonejs/keystonejs-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Keystonejs Plans Pricing](https://apis.io/plans/keystonejs/keystonejs-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Keystonejs Rate Limits](https://apis.io/rate-limits/keystonejs/keystonejs-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Keystonejs Finops](https://apis.io/finops/keystonejs/keystonejs-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://keystonejs.com)
+- [Documentation](https://keystonejs.com/docs)
+- [Pricing](https://www.thinkmill.com.au/services/keystone)
+- [Blog](https://keystonejs.com/blog)
+
+## API Evangelist rating
+
+**Kin Score 20.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 35.1 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/keystonejs/](https://apis.io/providers/keystonejs/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for KeystoneJS: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/keystonejs/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
